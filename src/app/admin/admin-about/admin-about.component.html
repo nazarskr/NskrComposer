@@ -1,0 +1,51 @@
+<div id="adminAbout">
+    <div class="adminField">
+        <label for="editBio">Edit bio</label>
+        <textarea [(ngModel)]="editBio" name="editBio" id="editBio" cols="30" rows="30" class="adminTextarea textBlack"></textarea>
+        <button class="myButton" (click)="saveBio()">Save</button>
+    </div>
+    <hr>
+    <hr>
+    <div>
+        <table id="adminGallery" class="myTable">
+            <tr>
+                <th>id</th>
+                <th>url</th>
+                <th>altText</th>
+                <th>title</th>
+                <th>thumbnailUrl</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr *ngFor="let image of images">
+                <td>{{image.id}}</td>
+                <td>{{image.url}}</td>
+                <td>{{image.altText}}</td>
+                <td>{{image.title}}</td>
+                <td>{{image.thumbnailUrl}}</td>
+                <td><button class="myButton" (click)="editImage(image)">Edit</button></td>
+                <td><button class="myButton" (click)="deleteImage(image)">Delete</button></td>
+            </tr>
+        </table>
+        <hr>
+        <form>
+            <div class="flexRow">
+                <label for="imageUrl">Image Id
+                    <input type="text" name="imageId" id="imageId" [(ngModel)]="imageId">
+                </label>
+                <label for="imageUrl">Image Url/Thumbnail
+                    <input type="text" name="imageUrl" id="imageUrl" [(ngModel)]="imageUrl">
+                </label>
+                <label for="imageTitle">Image Title
+                    <input type="text" name="imageTitle" id="imageTitle" [(ngModel)]="imageTitle">
+                </label>
+                <label for="imageAltText">Image Alt Text
+                    <input type="text" name="imageAltText" id="imageAltText" [(ngModel)]="imageAltText">
+                </label>
+            </div>
+            <hr>
+            <button class="myButton" (click)="addImage()">Add image</button>
+            <button class="myButton" (click)="saveImage()">Save image</button>
+        </form>
+    </div>
+</div>

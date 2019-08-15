@@ -1,0 +1,35 @@
+<nav class="dr-menu" id="navigation" (window:scroll)="fixedScroll()" [@fixedMenu]="!open ? null : isScroll ? 'scroll' : 'static'" [@moveMenu]="isScroll ? 'scroll' : 'static'" [@showMenu]="open ? 'opened' : 'closed'">
+    <div class="dr-trigger" (click)="openMenu()">
+        <span class="dr-icon dr-icon-menu" [@fixedLink]="isScroll ? 'scroll' : 'static'"></span>
+        <a class="dr-label" id="myLabel" [@fixedLink]="isScroll ? 'scroll' : 'static'" [@showLabel]="isScroll ? 'scroll' : 'static'">Nazar Skrypnyk</a>
+    </div>
+    <ul (click)="openMenu()">
+        <li routerLinkActive="active">
+            <img src="../../../assets/images/menu/home.png" alt="no icon" srcset="" class="menuIcon" [@fixedIcon]="isScroll ? 'scroll' : 'static'">
+            <a routerLink="home" [@fixedLink]="isScroll ? 'scroll' : 'static'">Home</a>
+        </li>
+        <li routerLinkActive="active">
+            <img src="../../../assets/images/menu/about.png" alt="no icon" srcset="" class="menuIcon" [@fixedIcon]="isScroll ? 'scroll' : 'static'">
+            <a routerLink="about" [@fixedLink]="isScroll ? 'scroll' : 'static'">About</a>
+        </li>
+        <li routerLinkActive="active">
+            <img src="../../../assets/images/menu/music.png" alt="no icon" srcset="" class="menuIcon" [@fixedIcon]="isScroll ? 'scroll' : 'static'">
+            <a routerLink="music" [@fixedLink]="isScroll ? 'scroll' : 'static'">Music</a>
+        </li>
+        <li routerLinkActive="active">
+            <img src="../../../assets/images/menu/software.png" alt="no icon" srcset="" class="menuIcon" [@fixedIcon]="isScroll ? 'scroll' : 'static'">
+            <a routerLink="software"[@fixedLink]="isScroll ? 'scroll' : 'static'">Software</a>
+        </li>
+        <li routerLinkActive="active">
+            <img src="../../../assets/images/menu/blog.png" alt="no icon" srcset="" class="menuIcon" [@fixedIcon]="isScroll ? 'scroll' : 'static'">
+            <a routerLink="blog" [@fixedLink]="isScroll ? 'scroll' : 'static'">Blog</a>
+        </li>
+        <li routerLinkActive="active">
+            <img src="../../../assets/images/menu/contact.png" alt="no icon" srcset="" class="menuIcon" [@fixedIcon]="isScroll ? 'scroll' : 'static'">
+            <a routerLink="contacts" [@fixedLink]="isScroll ? 'scroll' : 'static'">Contacts</a>
+        </li>
+    </ul>
+</nav>
+<div id="scrollButton" (click)="scrollUp()" [@scrollButton]="isBigScroll ? 'scroll' : 'static'"></div>
+<div id="navIdentifier" [@showIdentifier]="isScroll ? 'scroll' : 'static'"></div>
+

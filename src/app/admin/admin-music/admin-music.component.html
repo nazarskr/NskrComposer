@@ -1,0 +1,157 @@
+<div id="adminEvents">
+    <table class="myTable">
+        <caption class="textWhite">Events</caption>
+        <tr>
+            <th>date</th>
+            <th>time</th>
+            <th>location</th>
+            <th>city</th>
+            <th>event</th>
+            <th>piece</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+        <tr *ngFor="let event of events">
+            <td>{{event.date}}</td>
+            <td>{{event.time}}</td>
+            <td>{{event.location}}</td>
+            <td>{{event.city}}</td>
+            <td>{{event.event}}</td>
+            <td>{{event.piece}}</td>
+            <td><button class="myButton" (click)="editEvent(event)">Edit</button></td>
+            <td><button class="myButton" (click)="deleteEvent(event)">Delete</button></td>
+        </tr>
+    </table>
+    <form>
+        <div class="flexColumn">
+            <label for="eventId">Event Id
+                <input type="text" name="eventId" id="eventId" [(ngModel)]="eventId">
+            </label>
+            <label for="eventDate">Event Date
+                <input type="text" name="eventDate" id="eventDate" [(ngModel)]="eventDate">
+            </label>
+            <label for="eventTime">Event Time
+                <input type="text" name="eventTime" id="eventTime" [(ngModel)]="eventTime">
+            </label>
+            <label for="eventLocation">Event Location
+                <input type="text" name="eventLocation" id="eventLocation" [(ngModel)]="eventLocation">
+            </label>
+            <label for="eventCity">Event City
+                <input type="text" name="eventCity" id="eventCity" [(ngModel)]="eventCity">
+            </label>
+            <label for="eventName">Event Name
+                <input type="text" name="eventName" id="eventName" [(ngModel)]="eventName">
+            </label>
+            <label for="pieceTitle">Piece Title
+                <input type="text" name="pieceTitle" id="pieceTitle" [(ngModel)]="pieceTitle">
+            </label>
+        </div>
+        <hr>
+        <button class="myButton" (click)="addEvent()">Add event</button>
+        <button class="myButton" (click)="saveEvent()">Save event</button>
+    </form>
+</div>
+<hr>
+<div id="adminPiecesList">
+    <table class="myTable">
+        <caption class="textWhite">List of works</caption>
+        <tr>
+            <th>#</th>
+            <th>title</th>
+            <th>collab. with</th>
+            <th>performers</th>
+            <th>year</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+        <tr *ngFor="let piece of piecesList">
+            <td>{{piece.id+1}}</td>
+            <td>{{piece.title}}</td>
+            <td>{{piece.collab}}</td>
+            <td>{{piece.perf}}</td>
+            <td>{{piece.year}}</td>
+            <td><button class="myButton" (click)="editPiece(piece)">Edit</button></td>
+            <td><button class="myButton" (click)="deletePiece(piece)">Delete</button></td>
+        </tr>
+    </table>
+    <form>
+        <div class="flexColumn">
+            <label for="pieceId">Piece Id
+                <input type="text" name="pieceId" id="pieceId" [(ngModel)]="pieceId">
+            </label>
+            <label for="pieceTitleList">Piece Title
+                <input type="text" name="pieceTitle" id="pieceTitle" [(ngModel)]="pieceTitle">
+            </label>
+            <label for="pieceCollab">Collab with
+                <input type="text" name="pieceCollab" id="pieceCollab" [(ngModel)]="pieceCollab">
+            </label>
+            <label for="piecePerformers">Performers
+                <input type="text" name="piecePerformers" id="piecePerformers" [(ngModel)]="piecePerformers">
+            </label>
+            <label for="pieceYear">Piece Year
+                <input type="text" name="pieceYear" id="pieceYear" [(ngModel)]="pieceYear">
+            </label>
+        </div>
+        <hr>
+        <button class="myButton" (click)="addPiece()">Add piece</button>
+        <button class="myButton" (click)="savePiece()">Save piece</button>
+    </form>
+</div>
+<div id="adminAudio">
+    <table class="myTable">
+        <caption class="textWhite">Audio</caption>
+       <tr>
+           <th>id</th>
+           <th>trackSrc</th>
+           <th>edit</th>
+           <th>delete</th>
+       </tr>
+       <tr *ngFor="let track of tracks">
+            <td>{{track.id}}</td>
+            <td>{{track.src}}</td>
+            <td><button class="myButton" (click)="editTrack(track)">Edit</button></td>
+            <td><button class="myButton" (click)="deleteTrack(track)">Delete</button></td>
+       </tr> 
+    </table>
+    <hr>
+    <form>
+        <label for="trackId">Track Id
+            <input type="text" name="trackId" id="trackId" [(ngModel)]="trackId">
+        </label>
+        <label for="trackSrc">Track Src
+            <input type="text" name="trackSrc" id="trackSrc" [(ngModel)]="trackSrc">
+        </label>
+        <hr>
+        <button class="myButton" (click)="addTrack()">Add track</button>
+        <button class="myButton" (click)="saveTrack()">Save track</button>
+    </form>
+</div>
+<div id="adminVideo">
+    <table class="myTable">
+        <caption class="textWhite">Video</caption>
+        <tr>
+            <th>id</th>
+            <th>videoId</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+        <tr *ngFor="let video of videos">
+             <td>{{video.id}}</td>
+             <td>{{video.videoId}}</td>
+             <td><button class="myButton" (click)="editVideo(video)">Edit</button></td>
+             <td><button class="myButton" (click)="deleteVideo(video)">Delete</button></td>
+        </tr>
+    </table>
+    <hr>
+    <form>
+        <label for="videoId">Video Id
+            <input type="text" name="videoId" id="videoId" [(ngModel)]="videoId">
+        </label>
+        <label for="youtubeId">Youtube Id
+            <input type="text" name="youtubeId" id="youtubeId" [(ngModel)]="youtubeId">
+        </label>
+        <hr>
+        <button class="myButton" (click)="addVideo()">Add video</button>
+        <button class="myButton" (click)="saveVideo()">Save video</button>
+    </form>
+</div>

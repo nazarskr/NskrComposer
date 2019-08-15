@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+}
+#backgroundAnimation {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.page {
+    background: $main-color-translucent;
+    padding: 130px 60px;
+    min-height: 100vh;
+    overflow: scroll;
+    color: white; 
+}
+
+.myTable {
+    width: 70%;
+    background-color: $main-color-translucent;
+    border-radius: 10px;
+    th {
+        background-color: $main-color;
+    }
+    * {
+        padding: 10px 20px;
+    }
+}
+.myButton {
+    padding: 7px 10px;
+    color: white;
+    background: $main-color;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.myButton:focus, .myButton:active {
+    outline: none;
+    box-shadow: none;
+}
+.myButton:hover {
+    background-color: white;
+    color: $main-color;
+}
+.moreLink:hover {
+    color: black;
+}
+.flexRow {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    * {
+        margin-right: 20px;
+    }
+    flex-wrap: wrap;
+}
+.flexColumn {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.flexCenter {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.adminField {
+    background-color: $main-color-translucent;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 20px;
+    position: relative;
+}
+.closeX {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    z-index: 30;
+}
+.closeX:hover {
+    cursor: pointer;
+}
+.adminTextarea {
+    width: 100%;
+}
+.textWhite {
+    color: white;
+}
+.textBlack {
+    color: black;
+}
+@media screen and (max-width: 450px) {
+    .page{
+        padding: 100px 25px;
+    }
+}
+@media screen and (max-height: 350px) {
+    .page{
+        padding-top: 80px;
+    }
+}

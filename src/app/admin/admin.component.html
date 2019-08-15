@@ -1,0 +1,43 @@
+<div class="page" id="adminMain">
+    <mat-tab-group mat-align-tabs="center" animationDuration="1000ms" [color]="white" [backgroundColor]="red">
+        <mat-tab label="Home">
+            <ng-template matTabContent>
+                <div id="homeAdmin">
+                    <div>VisitsCounter: </div>
+                    <input type="number" name="visitsCounter" [(ngModel)]="visitsCounter" id="visitsCounter" readonly>
+                </div>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="About">
+            <ng-template matTabContent>
+                <app-admin-about></app-admin-about>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Music">
+            <ng-template matTabContent>
+                <app-admin-music></app-admin-music>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Software">
+            <ng-template matTabContent>
+                <div id="softwareAdmin">Software</div>
+                <p>add app code</p>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Blog">
+            <ng-template matTabContent>
+                <app-admin-blog></app-admin-blog>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Contacts">
+            <ng-template matTabContent>
+                <app-admin-contacts></app-admin-contacts>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Others">
+            <ng-template matTabContent>
+                <div id="othersAdmin">Others</div>
+            </ng-template>
+        </mat-tab>
+    </mat-tab-group>
+</div>

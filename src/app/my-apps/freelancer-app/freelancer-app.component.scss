@@ -1,0 +1,4 @@
+@import "../../../variables.scss";
+::ng-deep .mat-card, ::ng-deep .mat-expanded {
+    background-color: $main-color-translucent;
+}

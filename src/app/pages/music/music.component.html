@@ -1,0 +1,66 @@
+<div id="music" class="page">
+    <mat-tab-group mat-align-tabs="center" animationDuration="1000ms">
+        <mat-tab label="Events">
+            <ng-template matTabContent> 
+                <table matSort id="listOfEvents">
+                    <tr>
+                        <th>date</th>
+                        <th>time</th>
+                        <th>location</th>
+                        <th>city</th>
+                        <th>event</th>
+                        <th>piece</th>
+                    </tr>
+                    <tr *ngFor="let event of events">
+                        <td>{{event.date}}</td>
+                        <td>{{event.time}}</td>
+                        <td>{{event.location}}</td>
+                        <td>{{event.city}}</td>
+                        <td>{{event.event}}</td>
+                        <td>{{event.piece}}</td>
+                    </tr>
+                </table>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="List of works"> 
+            <ng-template matTabContent> 
+                <table matSort (matSortChange)="sortData($event)" id="listOfPieces">
+                    <tr>
+                        <th mat-sort-header="id">#</th>
+                        <th mat-sort-header="title">title</th>
+                        <th mat-sort-header="collab">collab. with</th>
+                        <th mat-sort-header="perf">performers</th>
+                        <th mat-sort-header="year">year</th>
+                    </tr>
+                    <tr *ngFor="let piece of sortedData">
+                        <td>{{piece.id+1}}</td>
+                        <td>{{piece.title}}</td>
+                        <td>{{piece.collab}}</td>
+                        <td>{{piece.perf}}</td>
+                        <td>{{piece.year}}</td>
+                    </tr>
+                </table>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Audio"> 
+            <ng-template matTabContent>
+                <div *ngFor="let track of tracks">
+                    <iframe width="100%" height="60" [src]="track.src | safe" frameborder="0"></iframe>
+                </div> 
+            </ng-template>
+        </mat-tab>
+        <mat-tab id ="videoTab" label="Video"> 
+            <ng-template matTabContent>
+                <div id="myVideos">
+                    <youtube-player class="videoTemp" *ngFor="let video of videos"
+                        [videoId]=[(video.youtubeId)]
+                        [width]= '854'
+                        [height]= '480'
+                        (ready)="savePlayer($event)"
+                        (change)="onStateChange($event)">
+                    </youtube-player> 
+                </div> 
+            </ng-template>
+        </mat-tab>
+    </mat-tab-group>
+</div>

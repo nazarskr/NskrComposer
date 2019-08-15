@@ -1,0 +1,8 @@
+<div id="software" class="page">
+    <div class="app" *ngFor="let app of myApps" routerLinkActive="active" routerLink="/{{app.link}}">
+        <img src="{{app.appImage}}" alt="no img" srcset="">
+        <hr>
+        <h3>{{app.name}}</h3>
+        <p>{{app.description}}</p>
+    </div>
+</div>

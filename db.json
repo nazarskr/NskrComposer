@@ -1,0 +1,316 @@
+{
+  "entrance": {
+    "login": "1nazar",
+    "password": "2skrypnyk"
+  },
+  "bio": {
+    "text": "Nazar Skrypnyk was born in 1992 in Ternopil Region. He`s graduated composition faculty of Mykola Lysenko Lviv State Academy of Music in 2016 (studied composition with Victor Kaminsky, orchestration and electroacoustic music with Ostap Manulyak). Now he is based in Lviv. Nazar is winner of the V International Master-Classes of New Music COURSE (Lviv, 2016). Also he took part in master-classes with famous composers from Ukraine, Germany, Austria, France, USA, Russia, Poland, Netherlands and Czech Republic. His pieces were performed at such festivals: “Musical meeting of Polish and Ukrainian Youth”, “VOX ELECTRONICA”, “International Festival of Contemporary Music Contrasts”, “Two days and two nights of new music” (Ukraine), “aXes - Triduum Muzyki Nowej” (Poland), “SAX16 International Saxophone Festival Amsterdam” (Netherlands). Manager of projects “One cubed” and “#це просто” (“#it’s simple”) In 2018 Nazar got grant of President of Ukraine for young artists (project “451” for symphony orchestra, live electronics, performance and video, premiere – 21/10/2018, Lviv, International Festival of Contemporary Music Contrasts)."
+  },
+  "events": [
+    {
+      "id": 0,
+      "date": "01/06/2019",
+      "time": "19:00",
+      "location": "Lviv University Great Hall",
+      "city": "Lviv",
+      "event": "Vox Electronica",
+      "piece": "Graphical sonic of memory"
+    },
+    {
+      "id": 1,
+      "date": "21/05/2019",
+      "time": "20:00",
+      "location": "Odessa Philharmonic Hall",
+      "city": "Odessa",
+      "event": "Two days and two nights of new music",
+      "piece": "An insect"
+    },
+    {
+      "id": 2,
+      "date": "26/12/2018",
+      "time": "20:00",
+      "location": "Lviv Composers Society",
+      "city": "Lviv",
+      "event": "Квартирник у Спілці",
+      "piece": "Momi no ki"
+    },
+    {
+      "id": 3,
+      "date": "21/10/2018",
+      "time": "18:00",
+      "location": "Lviv National Philharmony",
+      "city": "Lviv",
+      "event": "Contrasts International Contemporary Music Festival",
+      "piece": "451"
+    },
+    {
+      "id": 4,
+      "date": "23/04/2018",
+      "time": "01:30",
+      "location": "Odessa Philharmonic Foyer Hall",
+      "city": "Odessa",
+      "event": "Two days and two nights of new music",
+      "piece": "Marionetta"
+    },
+    {
+      "id": 5,
+      "date": "14/04/2018",
+      "time": "19:00",
+      "location": "Gershom",
+      "city": "Lviv",
+      "event": "Vox Electronica",
+      "piece": "Tree"
+    }
+  ],
+  "messages": [
+    {
+      "id": 2,
+      "date": "23 July 2019, 17:38:00",
+      "name": "Sophia",
+      "mail": "98765@nfl.nmd",
+      "text": "Великий привіт"
+    },
+    {
+      "id": 3,
+      "date": "23 July 2019, 17:38:36",
+      "name": "Nazar",
+      "mail": "9876@ukr.net",
+      "text": "Пака!"
+    },
+    {
+      "id": 5,
+      "date": "24 July 2019, 19:16:57",
+      "name": "РРР",
+      "mail": "8765@hgf.vtf",
+      "text": "HHH"
+    },
+    {
+      "id": 6,
+      "date": "26 July 2019, 14:18:36",
+      "name": "jhg",
+      "mail": "88582107@hgfd.jhg",
+      "text": "iiooo"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 0,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F1.jpg?alt=media&token=ddd3cef9-dfa4-4547-8375-6892b78aed57",
+      "altText": "1",
+      "title": "image1",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F1.jpg?alt=media&token=ddd3cef9-dfa4-4547-8375-6892b78aed57"
+    },
+    {
+      "id": 1,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F2.jpg?alt=media&token=6d75a846-6c46-4102-9cf9-b80d948a2ebd",
+      "altText": "2",
+      "title": "image2",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F2.jpg?alt=media&token=6d75a846-6c46-4102-9cf9-b80d948a2ebd"
+    },
+    {
+      "id": 2,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F3.jpg?alt=media&token=e2fe5be3-ad7b-4d94-9eb5-d91009bd117e",
+      "altText": "3",
+      "title": "image3",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F3.jpg?alt=media&token=e2fe5be3-ad7b-4d94-9eb5-d91009bd117e"
+    },
+    {
+      "id": 3,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F4.jpg?alt=media&token=7e384fd6-de3a-4aef-be10-7dd077889eba",
+      "altText": "4",
+      "title": "image4",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F4.jpg?alt=media&token=7e384fd6-de3a-4aef-be10-7dd077889eba"
+    },
+    {
+      "id": 4,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F5.jpg?alt=media&token=05ad72ad-81bd-4706-807e-885a84f4b05a",
+      "altText": "5",
+      "title": "image5",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F5.jpg?alt=media&token=05ad72ad-81bd-4706-807e-885a84f4b05a"
+    },
+    {
+      "id": 5,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F6.jpg?alt=media&token=ceb5c795-981a-4293-806e-6a62f0eacb97",
+      "altText": "6",
+      "title": "image6",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2F6.jpg?alt=media&token=ceb5c795-981a-4293-806e-6a62f0eacb97"
+    },
+    {
+      "id": 6,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2FIMG_20190513_173703.jpg?alt=media&token=04d009c0-63f1-47e8-830b-ad7f33fe657d",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2FIMG_20190513_173703.jpg?alt=media&token=04d009c0-63f1-47e8-830b-ad7f33fe657d",
+      "altText": "yyy",
+      "title": "yyy"
+    },
+    {
+      "id": 7,
+      "url": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2FIMG_20190515_212754.jpg?alt=media&token=6f9dd24b-18cb-46da-9586-207aeb959a3c",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/nskrwebsite.appspot.com/o/images%2Fgallery%2FIMG_20190515_212754.jpg?alt=media&token=6f9dd24b-18cb-46da-9586-207aeb959a3c",
+      "altText": "ooo",
+      "title": "image ooo"
+    }
+  ],
+  "youtube": [
+    {
+      "id": 0,
+      "youtubeId": "jlITf1y6pmo"
+    },
+    {
+      "id": 1,
+      "youtubeId": "AUbp7B7yvCU"
+    },
+    {
+      "id": 2,
+      "youtubeId": "0b38ag43I78"
+    },
+    {
+      "id": 3,
+      "youtubeId": "Tyrr5njiEWk"
+    },
+    {
+      "id": 4,
+      "youtubeId": "36qxMEGO4V8"
+    }
+  ],
+  "mixcloud": [
+    {
+      "id": 0,
+      "src": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fnskr%2Fnazar-skrypnyk-anant-for-amplified-violin-and-piano%2F"
+    },
+    {
+      "id": 1,
+      "src": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fnskr%2Fnazar-skrypnyk-x-for-alto-saxophone-and-piano%2F"
+    },
+    {
+      "id": 2,
+      "src": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fnskr%2Fnazar-skrypnyk-waiting-for-for-grand-piano-and-three-performers%2F"
+    },
+    {
+      "id": 3,
+      "src": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fnskr%2Fnazar-skrypnyk-quasar-for-violin-and-orchestra%2F"
+    }
+  ],
+  "piecesList": [
+    {
+      "id": 0,
+      "title": "Graphical sonic of memory",
+      "collab": "O. Manulyak",
+      "perf": "live-electronics, video",
+      "year": 2019
+    },
+    {
+      "id": 1,
+      "title": "An insect",
+      "collab": null,
+      "perf": "bass-baritone, ensemble, electronics, stage",
+      "year": 2019
+    },
+    {
+      "id": 2,
+      "title": "For kids and not only",
+      "collab": null,
+      "perf": "piano",
+      "year": 2019
+    },
+    {
+      "id": 3,
+      "title": "451",
+      "collab": null,
+      "perf": "orchestra, live-electronics, video, performance",
+      "year": 2018
+    },
+    {
+      "id": 4,
+      "title": "Tree",
+      "collab": null,
+      "perf": "live-electronics, performance",
+      "year": 2018
+    },
+    {
+      "id": 5,
+      "title": "Marionetta",
+      "collab": null,
+      "perf": "violin, performance",
+      "year": 2017
+    },
+    {
+      "id": 6,
+      "title": "Anant",
+      "collab": null,
+      "perf": "violin, piano",
+      "year": 2017
+    },
+    {
+      "id": 7,
+      "title": "#it",
+      "collab": null,
+      "perf": "french horn, electronics",
+      "year": 2017
+    },
+    {
+      "id": 8,
+      "title": "Uno",
+      "collab": null,
+      "perf": "sound objects",
+      "year": 2016
+    },
+    {
+      "id": 9,
+      "title": "[X]",
+      "collab": null,
+      "perf": "saxophone, piano",
+      "year": 2016
+    },
+    {
+      "id": 10,
+      "title": "Quasar",
+      "collab": null,
+      "perf": "violin, orchestra",
+      "year": 2016
+    },
+    {
+      "id": 11,
+      "title": "Inspiration",
+      "collab": "M. Khshanovskyi,\n S. Shaipov",
+      "perf": "sound objects, live electronics",
+      "year": 2016
+    },
+    {
+      "id": 12,
+      "title": "Wouldn’t it, Didi?",
+      "collab": null,
+      "perf": "bass-baritone, ensemble, stage",
+      "year": 2016
+    },
+    {
+      "id": 13,
+      "title": "Non risoluto",
+      "collab": null,
+      "perf": "ensemble",
+      "year": 2016
+    }
+  ],
+  "blog": [
+    {
+      "id": 0,
+      "date": "1/06/2019",
+      "picture": "me4.jpg",
+      "message": "Перший концерт фестивалю Vox Electronica – щорічної акції, що презентує зріз сучасних напрямків електроакустичної музики. Метою фестивалю є створення унікального середовища для обміну досвідом. Остап Мануляк/Назар Скрипник (UA). Аудіовізуальний перформанс «Графічна соніфікація пам’яті.»",
+      "viewMore": "https://lviv-online.com/ua/events/festival/festyval-elektroakustychnoyi-muzyky-vox-electronica-2019/"
+    },
+    {
+      "id": 1,
+      "date": "2/06/2019",
+      "picture": "me4.jpg",
+      "message": "Метою фестивалю є створення унікального середовища для обміну досвідом. ",
+      "viewMore": "https://www.ukr.net/ua/"
+    },
+    {
+      "id": 2,
+      "date": "6/06/2019",
+      "picture": "me4.jpg",
+      "message": "Перший концерт фестивалю Vox Electronica – щорічної акції, що презентує зріз сучасних напрямків електроакустичної музики. Метою фестивалю є створення унікального середовища для обміну досвідом. Остап Мануляк/Назар Скрипник (UA). Аудіовізуальний перформанс «Графічна соніфікація пам’яті.»",
+      "viewMore": "https://lviv-online.com/ua/events/festival/festyval-elektroakustychnoyi-muzyky-vox-electronica-2019/"
+    }
+  ]
+}

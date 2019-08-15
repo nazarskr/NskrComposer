@@ -1,0 +1,48 @@
+<div id="adminBlog">
+    <table class="myTable">
+        <tr>
+            <th>id</th>
+            <th>date</th>
+            <th>picture</th>
+            <th>message</th>
+            <th>more(link)</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let blogpost of blog">
+            <td>{{blogpost.id}}</td>
+            <td>{{blogpost.date}}</td>
+            <td>{{blogpost.picture}}</td>
+            <td>{{blogpost.message}}</td>
+            <td>{{blogpost.viewMore}}</td>
+            <td><button class="myButton" (click)="editBlogpost(blogpost)">Edit</button></td>
+            <td><button class="myButton" (click)="deleteBlogpost(blogpost)">Delete</button></td>
+        </tr>
+    </table>
+    <hr>
+    <div id="editingBlog" class="adminField">
+        <form>
+            <div class="flexColumn">
+                <label for="blogId">Blog Id
+                    <input type="text" name="blogId" id="blogId" [(ngModel)]="blogId">
+                </label>
+                <label for="blogDate">Blog Date
+                    <input type="text" name="blogDate" id="blogDate" [(ngModel)]="blogDate">
+                </label>
+                <label for="blogPicture">Picture src
+                    <input type="text" name="blogPicture" id="blogPicture" [(ngModel)]="blogPicture">
+                </label>
+                <label for="blogMessage">Message
+                    <textarea name="blogMessage" id="blogMessage" [(ngModel)]="blogMessage"></textarea>
+                </label>
+                <label for="blogViewMore">Link
+                    <input type="text" name="blogViewMore" id="blogViewMore" [(ngModel)]="blogViewMore">
+                </label>
+            </div>
+            <hr>
+            <button class="myButton" (click)="addBlogpost()">Add blog</button>
+            <button class="myButton" (click)="saveBlogpost()">Save blog</button>
+        </form>
+        <span class="closeX" (click)="closeEditWindow()">x</span>
+    </div>
+</div>

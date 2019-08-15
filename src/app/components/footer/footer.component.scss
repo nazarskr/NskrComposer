@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+footer a {
+    color: white;
+}
+footer a:visited {
+    color: white;
+}
+.social {
+    display: flex;
+    flex-flow: row; 
+    margin: 0 auto;
+    width: 150px;
+}
+.social img {
+    width: 32px;
+    height: 32px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px;
+}
+#copyright {
+    margin-top: 10px;
+}

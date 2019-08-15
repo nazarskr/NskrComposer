@@ -1,0 +1,12 @@
+#adminContacts {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+#editingMessage {
+    width: 300px;
+    margin-top: 55px;
+    input, textarea {
+        color: black;
+    }
+}

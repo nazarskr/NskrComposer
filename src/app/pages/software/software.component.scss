@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+#software {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.app {
+    border-radius: 7px;
+    width: 300px;
+    min-height: 300px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background: $main-color-translucent;
+    box-shadow: 0px 5px 5px $main-color;
+}
+img {
+    margin-top: 10px;
+    width: 290px;
+    height: 190px;
+    border-radius: 7px;
+}
+@media screen and (max-width: 400px) {
+    .app {
+        width: 230px;
+    }
+    img {
+        width: 210px;
+        height: 150px;
+    }
+}

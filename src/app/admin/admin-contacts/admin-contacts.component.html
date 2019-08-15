@@ -1,0 +1,47 @@
+<div id="adminContacts">
+    <div>
+        <h3>Messages</h3>
+        <table id="messages" class="myTable">
+            <tr>
+                <th>id</th>
+                <th>date</th>
+                <th>name</th>
+                <th>mail</th>
+                <th>text</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+            <tr *ngFor="let message of messages">
+                <td>{{message.id}}</td>
+                <td>{{message.date}}</td>
+                <td>{{message.name}}</td>
+                <td>{{message.mail}}</td>
+                <td>{{message.text}}</td>
+                <td><button class="myButton" (click)="editMessage(message)">Edit</button></td>
+                <td><button class="myButton" (click)="deleteMessage(message)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="editingMessage" class="adminField" [@hideEdit]="isEditHidden ? 'hidden' : 'visible'">
+        <div class="flexColumn">
+            <label for="messageId">Message Id
+                <input type="text" name="messageId" id="messageId" [(ngModel)]="messageId">
+            </label>
+            <label for="messageDate">Message Date
+                <input type="text" name="messageDate" id="messageDate" [(ngModel)]="messageDate">
+            </label>
+            <label for="messageName">Message Name
+                <input type="text" name="messageName" id="messageName" [(ngModel)]="messageName">
+            </label>
+            <label for="messageMail">Message Mail
+                <input type="text" name="messageMail" id="messageMail" [(ngModel)]="messageMail">
+            </label>
+            <label for="messageText">Message Text
+                <textarea name="messageText" id="messageText" [(ngModel)]="messageText"></textarea>
+            </label>
+        </div>
+        <button class="myButton" (click)="saveMessage()">Save message</button>
+        <span class="closeX" (click)="closeEditWindow()">x</span>
+    </div>
+</div>

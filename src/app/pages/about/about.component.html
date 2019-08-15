@@ -1,0 +1,24 @@
+<div id="about" class="page">
+    <div id="bioField" class="aboutField">
+        <h2>Bio</h2>
+        <p id="bio">{{bio?.text}}</p>
+    </div>
+    <hr>
+    <div id="galleryField" class="aboutField">
+        <h2>Gallery</h2>
+        <div id="gallery">
+            <div class="photo" *ngFor="let image of images; let i = index">
+                <img src="{{image.url}}" alt="no" srcset="" (click)="openGallery(i)">
+            </div>
+        </div>
+    </div>
+    <ngx-image-gallery 
+        [images]="images" 
+        [conf]="conf"
+        (onOpen)="galleryOpened($event)"
+        (onClose)="galleryClosed()"
+        (onImageClicked)="galleryImageClicked($event)"
+        (onImageChange)="galleryImageChanged($event)"
+        (onDelete)="deleteImage($event)">
+    </ngx-image-gallery>
+</div>

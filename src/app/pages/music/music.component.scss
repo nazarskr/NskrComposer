@@ -1,0 +1,45 @@
+@import "../../../variables.scss";
+
+#listOfPieces, #listOfEvents {
+    width: 100%;
+    background-color: $main-color-translucent;
+    th {
+        background-color: $main-color;
+    }
+    * {
+        padding: 10px 20px;
+    }
+}
+#videoTab {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+#myVideos {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    * {
+        margin: 20px;
+    }
+}
+::ng-deep .mat-card, ::ng-deep .mat-expanded {
+    background-color: $main-color;
+}
+::ng-deep .ng-star-inserted {
+    border-radius: 10px;
+}
+@media screen and (max-width: 600px) {  
+    #listOfPieces, #listOfEvents {
+        font-size: 10px;
+    }
+}
+@media screen and (max-height: 600px) {  
+    #listOfPieces, #listOfEvents {
+        font-size: 10px;
+    }
+}

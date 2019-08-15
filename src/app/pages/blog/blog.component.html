@@ -1,0 +1,10 @@
+<div class="page">
+    <div class="container">
+        <div class="blogPost" *ngFor="let post of blog">
+            <p class="blogDate">{{post.date}}</p>
+            <img src="../../../assets/images/{{post.picture}}" alt="no img" srcset="" class="blogPicture">
+            <p class="postMessage">{{post.message}}</p>
+            <a href="{{post.viewMore}}" class="moreLink">More...</a>
+        </div>
+    </div>
+</div>
