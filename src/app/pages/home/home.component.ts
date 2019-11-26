@@ -91,7 +91,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
   }
   sayHello() {
-    const text = 'Hi!  My name is Nazar.  I am composer and frontend developer based in Lviv, Ukraine_';
+    const text = 'Hi!  My name is Nazar.  I am composer and frontend developer based in Lviv, Ukraine';
     if (this.count < text.length) {
       document.getElementById('sayHello').innerHTML += text.charAt(this.count);
       if (text.charAt(this.count) !== ' ') {

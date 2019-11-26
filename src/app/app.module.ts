@@ -43,6 +43,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AdminGuard } from '../app/admin/login/login.component';
 import { LoginComponent } from './admin/login/login.component';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -91,12 +92,7 @@ import { LoginComponent } from './admin/login/login.component';
     NgxAudioPlayerModule,
     FontAwesomeModule,
     AngularFontAwesomeModule,
-    AngularFireModule.initializeApp({
-      apiKey: 'AIzaSyDd1CpztX7MkQLIDzh-zojG6oZ0IpD7xaY',
-      authDomain: 'nskrwebsite.firebaseapp.com',
-      storageBucket: 'nskrwebsite.appspot.com',
-      projectId: 'nskrwebsite',
-    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule
   ],
   providers: [AdminGuard],
